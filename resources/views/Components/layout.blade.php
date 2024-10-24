@@ -41,7 +41,10 @@
               @endguest
 
               @auth
-                <p>Acá mostrar cuando esté autenticado!</p>
+                <form method="POST" action="/logout">
+                  @csrf
+                  <x-form-button>Log Out</x-form-button>
+                </form>
               @endauth
               
             </div>
